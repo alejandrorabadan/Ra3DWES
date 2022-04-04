@@ -26,6 +26,8 @@ $aEjercicios = array(
     <h1>Listado de ejercicios</h1>
     <h3>Enlace al github</h3>
     <a href="https://github.com/alejandrorabadan/Ra3DWES" target="_blank">Enlace al github</a>
+    <h3>Enlace al github Tema3 Tanda2</h3>
+    <a href="https://github.com/alejandrorabadan/Ra3DWES/tree/master/tema3Actividades2" target="_blank">Enlace al github Tema 3 Tanda 2</a>
     <?php
     foreach ($aEjercicios as $key => $value) {
         echo "<h3>".$value['descripcion']."</h3>";
