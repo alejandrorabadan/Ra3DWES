@@ -6,6 +6,11 @@ $aEjercicios = array(
     array('id'=>4,"titulo"=>"Indice","descripcion"=>"Ejercicio3","enlace"=>"./ejercicio3/index.php"),
     array('id'=>5,"titulo"=>"Indice","descripcion"=>"Ejercicio4","enlace"=>"./ejercicio4/index.php"),
     array('id'=>6,"titulo"=>"Indice","descripcion"=>"Ejercicio5","enlace"=>"./ejercicio5/index.php"),
+    array('id'=>7,"titulo"=>"Indice","descripcion"=>"Ejercicio1-Tanda2","enlace"=>"./tema3Actividades2/ejercicio1/index.php"),
+    array('id'=>8,"titulo"=>"Indice","descripcion"=>"Ejercicio2-Tanda2","enlace"=>"./tema3Actividades2/ejercicio2/index.php"),
+    array('id'=>9,"titulo"=>"Indice","descripcion"=>"Ejercicio3-Tanda2","enlace"=>"./tema3Actividades2/ejercicio3/index.php"),
+    array('id'=>10,"titulo"=>"Indice","descripcion"=>"Ejercicio4-Tanda2","enlace"=>"./tema3Actividades2/ejercicio4/index.php"),
+
     
 );
 ?>
@@ -19,9 +24,11 @@ $aEjercicios = array(
 </head>
 <body>
     <h1>Listado de ejercicios</h1>
+    <h3>Enlace al github</h3>
+    <a href="https://github.com/alejandrorabadan/Ra3DWES" target="_blank">Enlace al github</a>
     <?php
     foreach ($aEjercicios as $key => $value) {
-        echo ("<h3>Ejercicio número</h3>");
+        echo "<h3>".$value['descripcion']."</h3>";
         echo $value["titulo"]." => ".$value["descripcion"]." => "?><a href="<?php echo ($value['enlace']) ?>" target="_blank">index</a>
       <?php  
     }
